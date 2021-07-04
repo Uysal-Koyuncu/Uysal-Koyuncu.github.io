@@ -15,7 +15,7 @@ I am now majoring in CS and Mathematics at UPenn, but my interests are not limit
 Recent interests:
 - Peiyang Period Chinese History
 - Geographic Information System
-- Natural Language Processing''
+- Natural Language Processing
 
 ### Research
 
