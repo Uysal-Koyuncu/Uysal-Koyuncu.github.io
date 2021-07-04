@@ -29,4 +29,4 @@ Football (please, no "soccer" anymore) means a lot to me. I started watching the
 
 ### Music
 
-Another great part of my breaks are spent on music. The best genre for me is post-punk and EDM's. My favorite bands include New Order, P.K.14, and Omnipotent Youth Society (万能青年旅店).
+Another great part of my breaks are spent on music. The best genre for me is post-punk and EDM's. My favorite bands include New Order, [P.K.14](https://www.youtube.com/watch?v=S_ApJ2ZkWpw), and [Omnipotent Youth Society (万能青年旅店)](https://www.youtube.com/watch?v=nhqmV_-awmE).
