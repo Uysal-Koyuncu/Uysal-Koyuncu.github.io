@@ -6,8 +6,6 @@ author: "Uysal Koyuncu"
 tags: "Poemas"
 ---
 
-## 月是谁说的谎
-
 月是谁说的谎  
 对准它的冷枪  
 在光的碎片被拾起之前  

@@ -6,8 +6,6 @@ author: "Uysal Koyuncu"
 tags: "Poemas"
 ---
 
-## 愿望
-
 轻松地睡去  
 做一个平均的梦  
 在幻想和无重力中体验血涌  
