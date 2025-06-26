@@ -6,7 +6,7 @@ author: "Uysal Koyuncu"
 tags: "Poemas"
 ---
 
-> 钝剃刀
+> 钝剃刀……
 
 为了不去想你 我做了很多隐蔽。  
 刷牙的时候要用力  
