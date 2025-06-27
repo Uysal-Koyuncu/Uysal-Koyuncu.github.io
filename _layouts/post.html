@@ -2,18 +2,20 @@
 layout: default
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 <div class="post">
   <div class="post-info">
     <span>Written by</span>
     {% if page.author %}
-        {{ page.author }}
+    {{ page.author }}
     {% else %}
-        {{ site.author.name }}
+    {{ site.author.name }}
     {% endif %}
 
     {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    <br>
+    <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% endif %}
   </div>
 
@@ -23,17 +25,80 @@ layout: default
   {{ content }}
 </div>
 
+<!-- Votes! -->
+<div class="like-module">
+  <button id="like-button" class="like-button material-symbols-outlined" aria-label="Like this post">
+    favorite_border
+  </button>
+  <span id="like-count" class="like-count">0</span>
+</div>
+
 {% if page.comments %}
-  {% include disqus_comments.html %}
+{% include disqus_comments.html %}
 {% endif %}
 
 <div class="pagination">
   {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
   {% endif %}
   {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
   {% endif %}
 
   <a href="#" class="top">Top</a>
 </div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBOSNcjHl7ug-Gu_TBARZ_vJOpT0t0TvN8",
+    authDomain: "uysal-koyuncu-github-io.firebaseapp.com",
+    databaseURL: "https://uysal-koyuncu-github-io-default-rtdb.firebaseio.com",
+    projectId: "uysal-koyuncu-github-io",
+    storageBucket: "uysal-koyuncu-github-io.firebasestorage.app",
+    messagingSenderId: "924400155001",
+    appId: "1:924400155001:web:bd108bb6ae3772ec0597a8"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  const slug = window.location.pathname.replace(/^\/|\/$/g, '').replace(/\W+/g, "_") || "home";
+  const likeRef = ref(db, 'likes/' + slug);
+
+  const likeButton = document.getElementById("like-button");
+  const likeCount = document.getElementById("like-count");
+
+  const localKey = "liked_" + slug;
+
+  let liked = localStorage.getItem(localKey) === "1";
+
+  function updateButton() {
+    likeButton.textContent = liked ? "favorite" : "favorite_border";
+    likeButton.classList.toggle("active", liked);
+  }
+
+  onValue(likeRef, (snapshot) => {
+    const count = snapshot.val() || 0;
+    likeCount.textContent = count;
+    updateButton();
+  });
+
+  likeButton.addEventListener("click", () => {
+    if (liked) {
+      // 取消点赞
+      runTransaction(likeRef, (current) => (current || 0) - 1);
+      liked = false;
+      localStorage.removeItem(localKey);
+    } else {
+      // 点赞
+      runTransaction(likeRef, (current) => (current || 0) + 1);
+      liked = true;
+      localStorage.setItem(localKey, "1");
+    }
+    updateButton();
+  });
+
+</script>
