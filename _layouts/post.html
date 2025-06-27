@@ -73,6 +73,7 @@ layout: default
 
   const localKey = "liked_" + slug;
 
+  // 从本地读用户点赞状态，true 点赞，false 没点
   let liked = localStorage.getItem(localKey) === "1";
 
   function updateButton() {
@@ -80,11 +81,14 @@ layout: default
     likeButton.classList.toggle("active", liked);
   }
 
+  // 监听数据库点赞数，更新数字（但不影响按钮颜色）
   onValue(likeRef, (snapshot) => {
     const count = snapshot.val() || 0;
     likeCount.textContent = count;
-    updateButton();
   });
+
+  // 初始化按钮颜色
+  updateButton();
 
   likeButton.addEventListener("click", () => {
     if (liked) {
