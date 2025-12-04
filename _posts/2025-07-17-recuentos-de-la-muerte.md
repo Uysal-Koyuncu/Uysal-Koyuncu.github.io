@@ -3,7 +3,7 @@ layout: post
 title: "死亡亏格"
 subtitle: "Recuentos de la Muerte"
 author: "Uysal Koyuncu"
-tags: "Poemas Frescos"
+tags: "Poemas"
 ---
 
 I  

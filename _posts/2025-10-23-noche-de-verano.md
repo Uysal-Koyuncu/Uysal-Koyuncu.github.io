@@ -3,7 +3,7 @@ layout: post
 title: "夏夜"
 subtitle: "Noche de Verano"
 author: "Uysal Koyuncu"
-tags: "Poemas Frescos"
+tags: "Poemas"
 ---
 
 介乎往世与来世之间的  
@@ -16,4 +16,4 @@ tags: "Poemas Frescos"
 喝吧，我们挽起手来跳吧  
 跳吧，直到忘记那个躺在轮毂上  
 不巧溺死在世上的孩子  
- 
+  
