@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我持有的时间"
+title: "归我的时间"
 subtitle: "Mi Tiempo Privado"
 author: "Uysal Koyuncu"
 tags: "Poemas"
@@ -8,10 +8,11 @@ tags: "Poemas"
 
 我能回想的事情  
 局限在某个气压下行的午后  
-琢磨着，葡萄干如何陷入吐司胚，发酵  
+琢磨着，葡萄干揉进吐司胚，两次发酵  
 丝丝缕缕  
- 
+  
+像一片海穿过另一片海  
 留白的呼吸舒展的餐盘  
-葡萄干夹心吐司和鸡蛋  
-缓缓流经我持有的时间  
+葡萄干吐司和鸡蛋  
+缓缓流归我所有的时间  
   
