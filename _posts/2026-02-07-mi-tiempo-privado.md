@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "归我的时间"
+title: "时间归我"
 subtitle: "Mi Tiempo Privado"
 author: "Uysal Koyuncu"
 tags: "Poemas"
 ---
 
-我能回想的事情  
+我所能回想的事情  
 局限在某个气压下行的午后  
 琢磨着，葡萄干揉进吐司胚，两次发酵  
 丝丝缕缕  
