@@ -3,7 +3,7 @@ layout: post
 title: "至日"
 subtitle: "Solsticio"
 author: "Uysal Koyuncu"
-tags: "Ciudad"
+tags: "Ciudad Frescos"
 ---
 
 拿手机的瞬间，你听到那种物体即将滑落的预言。你在封皮被过错撕毁的书籍上见过这预言。你也可以问问洗手间水池里玻璃杯的碎片。九楼浴室的窗沿，你一手紧紧握住它，另一手握紧一块肥皂。  
