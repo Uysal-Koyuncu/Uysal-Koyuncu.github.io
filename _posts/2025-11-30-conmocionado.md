@@ -3,7 +3,7 @@ layout: post
 title: "弹震症"
 subtitle: "Conmocionado"
 author: "Uysal Koyuncu"
-tags: "Poemas"
+tags: "Poemas Frescos"
 ---
 
 ## I  
